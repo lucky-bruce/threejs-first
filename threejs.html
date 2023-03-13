@@ -8,6 +8,8 @@
 		</style>
 	</head>
 	<body>
+		<a href="threejs.html">Home</a>
+		<a href="webgl_geometry_text.html">Text Geometry</a>
 		<div id="error_container"></div>
 		<script type="module">
 			import * as THREE from 'https://unpkg.com/three/build/three.module.js';
@@ -22,7 +24,7 @@
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 
-			let geometry = new THREE.BoxGeometry( 1, 1, 1 );
+			let geometry = new THREE.BoxGeometry( 2, 1, 3 );
 			let material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 			const cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
